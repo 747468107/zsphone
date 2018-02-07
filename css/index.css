@@ -1,0 +1,646 @@
+/*
+* @Author: asus
+* @Date:   2018-02-05 14:13:05
+* @Last Modified by:   asus
+* @Last Modified time: 2018-02-07 10:25:27
+*/
+body{
+	height: 1334px;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.container{
+	margin: 0 auto;
+	width: 7.02rem;
+	/* border: 0.01rem solid black; */
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+/* 头部 */
+.header{
+	/* 相对窗口定位 */
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 7.5rem;
+	height: 1rem;
+	/* 叠放顺序 */
+	z-index: 10;
+	background: url('../images/header.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header-left{
+	width: 0.37rem;
+	height: 0.32rem;
+	/* background: black; */
+	margin-top: 0.36rem;
+	/* margin-left: 0.24rem; */
+}
+.header-left li{
+	width: 0.37rem;
+	border: 0.04rem solid white;
+}
+.hl2{
+	margin: 0.1rem auto;
+}
+.header-center{
+	width: 6.15rem;
+	height: 1rem;
+	background:url('../images/banner3_03.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 0.94rem 0.72rem
+}
+.header-right{
+	width: 0.5rem;
+	height: 0.5rem;
+	background:url('../images/banner1.png');
+	background-size: 0.5rem 0.5rem;
+	margin-top: 0.26rem;
+}
+
+
+
+/* banner */
+.banner{
+	margin-top: 1.12rem;
+	height: 4.33rem;
+	width: 7.5rem;
+	position: relative;
+
+}
+.banner img{
+	width: 100%;
+	height: 100%;
+}
+.ban-top{
+	width: 1.06rem;
+	height: 0.43rem;
+	background-color: #0bc8cc;
+	float: right;
+	position: absolute;
+	top: 0.27rem;
+	right: 0;
+}
+.banner .ban-top img{
+	width: 0.31rem;
+	height: 0.28rem;
+	margin-top: 0.09rem;
+	margin-left: 0.03rem;
+}
+.banner .ban-top p{
+	font-size: 0.24rem;
+	margin-top: 0.07rem;
+	margin-left: 0.43rem;
+	color: white;
+}
+.banner .ban-foot{
+	width:1.3rem;
+	height: 0.14rem;
+	margin: 0;
+	padding: 0;
+	float:right;
+	position: absolute;
+	right:0.28rem;
+	bottom: 0.24rem;
+
+}
+.banner .ban-foot div{
+	line-height: 0.14rem;
+	float: left;
+	margin-left: 0.12rem;
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 50%;
+	background: #fff;
+}
+.banner .ban-foot .ban02{
+	margin-top: -0.03rem;
+	bottom: 0.03rem;
+	width: 0.13rem;
+	height:0.13rem; 
+	border: 0.02rem solid #ebf44c;
+	background: rgba(0, 0, 0, 0) url('../images/bai_03.png');
+	background-position: 0.002rem 0.006rem;
+
+}
+/* .ban-foot{
+	width: 7.5rem;
+	height: 4.33rem;
+	background: url('../images/banner.png');
+	background-repeat: no-repeat;
+	background-size: 7.5rem 4.33rem;
+} */
+
+
+/* 热搜 */
+.hot{
+	width: 7.5rem;
+	height: 4.75rem;
+	background-color: #eeeeec;
+}
+.hot-top{
+	width: 100%;
+	height: 1.1rem;
+	background: url('../images/hot_03.png');
+	background-repeat: no-repeat;
+	background-size:7.5rem 1.1rem;
+
+}
+.hot-center{
+	height: 2.63rem;
+}
+.hot-center>div{
+	width: 2.17rem;
+	height: 2.88rem;
+	background: yellow;
+	float: left;
+	margin-left: 0.24rem;
+	border-radius: 0.05rem;
+}
+.hot-center .hot-cen-left{
+	margin-left: 0;
+}
+.hot-center>div img{
+	width: 100%;
+}
+.hot-center>div p{
+	font-size: 0.18rem;
+	margin-left: 0.12rem;
+	margin-top: -0.15rem;
+}
+
+.hot-center>div i{
+	width: 0.26rem;
+	height: 0.26rem;
+	/* 块级元素转换 */
+	display:block;
+	background:url('../images/jiahao_03.png');
+	background-size: 0.26rem 0.26rem;
+	margin-right: 0.24rem;
+	margin-top: -0.13rem;
+}
+.hot-foot{
+	/* 清除浮动 */
+	/* clear: both; */
+	width:7.50rem;
+	height: 1.02rem;
+	background-color:#0fcbcf;
+	/* position: relative; */
+	
+}
+/* 色板和色板上轮播点 */
+/* .hot-foot-d{
+	
+	position: absolute;
+	top: 0.51rem;
+	left: 3.75rem;
+
+	width:1.3rem;
+	height: 0.14rem;
+	margin: 0;
+	padding: 0;
+	float:right;
+	right:0.28rem;
+	bottom: 0.24rem;
+} */
+	
+
+
+.hot-foot-d .dian div{
+	/* 居中 */
+/* 	line-height: 0.14rem;
+	float: left;
+	margin-left: 0.12rem;
+	width: 0.1rem;
+	height: 0.1rem;
+	border-radius: 50%;
+	background: #000; */
+}
+
+/* .hot-foot .hot-foot-d .ban02{
+	margin-top: -0.03rem;
+	bottom: 0.03rem;
+	width: 0.13rem;
+	height:0.13rem; 
+	border: 0.02rem solid #ebf44c;
+	background: rgba(0, 0, 0, 0) url('../images/bai_03.png');
+	background-position: 0.002rem 0.006rem;
+} */
+
+
+/* 精选潮牌 */
+.title{
+	width: 7.5rem;
+	height: 2.6rem;
+}
+.title .title-top{
+	width: 7.5rem;
+	height: 1rem;
+	position: relative;
+}
+.title .title-top .title-top-01{
+	width: 2.40rem;
+	height: 0.52rem;
+	position: absolute;
+	top: 0.2rem;
+	left: 0.22rem;
+}
+.title .title-top .title-top-02{
+	width:0.38rem;
+	height: 0.34rem;
+	position: absolute; 
+	top: 0.25rem;
+	right: 0.24rem;
+}
+.title .title-foot{
+	width: 7.5rem;
+	height: 1.6rem;
+
+}
+.title-foot .title-foot-01{
+	width: 7rem;
+	height: 1.3rem;
+	background: #f57d3e;
+	margin:0 auto; 
+	border-radius: 0.1rem; 
+}
+.title-foot .title-foot-01 div{
+	width: ;
+	height: 
+}
+.title-foot .title-foot-01 .tes{
+	padding-left: 0.3rem;
+}
+.title-foot .title-foot-01 div img{
+	margin-top: 0.21rem;
+	float: left;
+	padding-left: 0.38rem; 
+	width: 0.78rem;
+	height: 0.78rem;
+	border-radius:50%;
+}
+
+/* 	 潮牌内容  */
+.content{
+	height: 3.98rem;
+	margin-top: 0.12rem;
+
+}
+
+.content div{
+	width: 2.33rem;
+	height: 1.9rem;
+	background: yellow;
+	float: left;
+}
+.content div img{
+	width: 2.33rem;
+}
+
+/* 作品 */
+.work{
+	width: 7.5rem;
+	height: 22.15rem;
+	background: #eeeeec;
+	margin-bottom: 0.9rem;
+}
+.work-top{
+	line-height: : 0.62rem;
+	height: 0.62rem;
+	margin-bottom: 0.24rem;
+	border-radius: 0.05rem; 
+	background: url('../images/hong_03.png') ;
+	background-size:7.02rem 0.62rem;
+}
+.circle{
+	border-radius: 50%;
+	width: 0.1rem;
+	height: 0.1rem;
+	background-color: #fff;  
+	margin: 0.25rem 0.21rem;
+}
+.con-center{
+	width: 5.58rem;
+	text-align: center;
+	font-size:0.36rem;
+	color: #fff;
+	margin-top: 0.04rem;
+	margin-left: 0.2rem;
+}
+/* .work-foot{
+	width: 7.5rem;
+	height: 21rem;
+	background: pink;
+} */
+.w-f-l{
+	width: 3.39rem;
+	height: 21rem;
+	/* background: pink; */
+}
+.w-f-r{
+	width: 3.39rem;
+	height: 21rem;
+	/* background: blue; */
+}
+.w-f-h{
+	height: 6.78rem;
+	width: 100%;
+	/* background: yellow; */
+	margin-bottom: 0.24rem;
+
+
+}
+.w-f-h1{
+	height: 3.92rem;
+	width: 100%;
+	/* background: green; */
+	margin-bottom: 0.24rem;
+
+}
+.w-f-h2{
+	height: 9.65rem;
+	width: 100%;
+	/* background: red; */
+	margin-bottom: 0.24rem;
+
+}
+.work-foot>div>div{
+	border-radius: 0.05rem;	
+}
+
+
+
+.all-f-l{
+	float: left;
+	width: 3.39rem;
+	height: 20rem;
+/* 	background-color: pink; */
+	margin-top: 0.24rem;
+}
+.all-f-r{
+	float: left;
+	width: 3.39rem;
+	height: 20rem;
+/* 	background-color: pink; */
+	margin-top: 0.24rem;
+	margin-left: 0.24rem;
+}
+.all-f-l-1{
+	width: 100%;
+	height: 6.5rem;
+	margin-bottom: 0.48rem;
+	border-radius: 0.06rem;
+	box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.2);
+
+}
+.all-f-l-1-top{
+	width: 100%;
+	height: 3.5rem;
+}
+.all-f-l-1-top img{
+	width: 100%;
+	height: 3.5rem;
+	border-radius: 0.06rem;
+}
+.all-f-l-1-cen{
+	width: 100%;
+	height: 2.3rem;
+	background-color: white;
+}
+.all-f-l-1-foot{
+	float: left;
+	width: 100%;
+	height: 0.9rem;
+	background-color: white;
+	border-radius: 0.06rem;
+	box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.2);
+}
+.allflcen-top{
+	width: 100%;
+	height: 0.5rem;
+}
+.allflcen-top a{
+	float: left;
+	font-size: 0.23rem;
+	color: #616161;
+	margin-top: 0.08rem;
+	margin-left: 0.2rem;
+}
+.allflcen-cen{
+	width: 100%;
+	height: 0.1rem;
+	background: url('../images/xuxian_03.png');
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: 3rem 0.1rem;
+}
+.allflcen-foot{
+	width: 100%;
+	height: 1.7rem;
+}
+.allflf-top{
+	width: 100%;
+	height: 0.4rem;
+}
+.allflf-cen{
+	width: 100%;
+	height: 0.9rem;
+}
+.allflf-foot{
+	width: 100%;
+	height: 0.4rem;
+}
+.allflf-top img{
+	float: left;
+	width: 0.3rem;
+	height: 0.3rem;
+	margin-left: 0.2rem;
+	margin-top: 0.05rem;
+}
+.allflf-top a{
+	float: left;
+	font-size: 0.2rem;
+	color: #919191;
+	margin-top: 0.06rem;
+	margin-right: 0.3rem;
+}
+.allflf-cen a{
+	float: left;
+	font-size: 0.2rem;
+	color: #919191;
+	margin-top: 0.03rem;
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+}
+.allflf-foot img{
+	float: left;
+	width: 1.5rem;
+	height: 0.3rem;
+	margin-left: 0.1rem;
+	margin-top: 0.05rem;
+}
+.all-f-l-1-foot img{
+	float: left;
+	width: 0.65rem;
+	height: 0.65rem;
+	margin-top: 0.12rem;
+	margin-left: 0.2rem;
+}
+.allflfr-top a{
+	float: left;
+	color: #434343;
+	font-size: 0.2rem;
+	font-weight: 600;
+	margin-top: 0.18rem;
+	margin-left: 0.15rem;
+}
+.allflfr-foot a{
+	float: left;
+	color: #919191;
+	font-size: 0.2rem;
+	font-weight: 600;
+	margin-left: 0.15rem;
+}
+.all-f-l-7-top{
+	width: 100%;
+	height:6.28rem; 
+}
+.all-f-l-7-top>img{
+	width: 100%;
+	height: 6.28rem;
+}
+.w-f-r-1 img{
+	width: 100%;
+	height: 2.51rem;
+	box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.2);
+}
+.w-f-r{
+	float: right;
+	width: 3.39rem;
+	height: 21rem;
+/* 	background-color: pink; */
+	margin-top: 0.24rem;
+}
+.w-f-r-1{
+	height: 3.92rem;
+	width: 100%;
+	background-color: #ffffff;
+	margin-bottom: 0.24rem;
+	border-radius: 0.05rem;
+}
+.w-f-r-1 a{
+	float: left;
+	color: #919191;
+	font-size: 0.2rem;
+	font-weight: 600;
+	margin-left: 0.15rem;
+	margin-top: -0.15rem;
+}
+.wfl1{
+	width: 100%;
+	height: 0.9rem;
+	background: #fafcfc;
+	margin-top: 0.27rem;
+	border-radius: 0.05rem;
+	box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, 0.2);
+}
+.wfl1  img{
+	float: left;
+	width: 0.63rem;
+	height: 0.63rem;
+	box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	margin-left: 0.2rem;
+	margin-top: 0.15rem;
+}
+.wfl1 ul{
+	float: left;
+	margin-left: 0.24rem;
+	margin-top: 0.12rem;
+}
+.wfl1 .shang{
+	font-size: 0.2rem;
+	font-family: 苹方;
+	color: #3e3c3c;
+}
+.wfl1 .xia{
+	font-size: 0.18rem;
+	font-family: 苹方;
+	color: #3e3c3c;
+}
+
+
+
+.w-f-r-2{
+	height: 6.78rem;
+	width: 100%;
+/* 	background-color: red */;
+	margin-bottom: 0.24rem;
+	border-radius: 0.05rem;
+}
+.w-f-r-3{
+	height: 9.5rem;
+	width: 100%;
+/* 	background-color: red; */
+	/* margin-bottom: 0.24rem; */
+	border-radius: 0.05rem;
+}
+
+
+
+/* 底部 */
+.foot{
+	width: 7.5rem;
+	height: 1.06rem;
+	background: #323141;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.foot a{
+	margin-left: 0.6rem;
+	margin-top: 0.2rem;
+	float: left;
+}
+.foot .tu1{
+	width: 25%;
+	height: 1.06rem;
+	background: red;
+	float: left;
+}
+.foot .tu2{
+	width: 25%;
+	height: 1.06rem;
+	background: #323141;
+	float: left;
+}
+.foot .tu3{
+	width: 25%;
+	height: 1.06rem;
+	background: #323141;
+	float: left;
+}
+.foot .tu4{
+	width: 25%;
+	height: 1.06rem;
+	background: #323141;
+	float: left;
+}
+.iconfont{
+	font-size: 0.64rem;
+	color: #ffffff;
+}
+
